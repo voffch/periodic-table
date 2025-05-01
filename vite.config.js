@@ -5,4 +5,8 @@ import preact from '@preact/preset-vite'
 export default defineConfig({
   base: '/periodic-table/',
   plugins: [preact()],
+  server: {
+	  host: true,
+	  port: 5173
+  }
 })
